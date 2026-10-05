@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces", ui-serif, Georgia, serif;
+
+  /* Haven Host Hub palette: beige, white, soft gold */
+  --color-cream: #fbf7f0;
+  --color-beige-50: #f8f3ea;
+  --color-beige-100: #f2e9d8;
+  --color-beige-200: #e8dbc0;
+  --color-beige-300: #dcc9a2;
+  --color-gold-300: #e3c889;
+  --color-gold-400: #d4ae66;
+  --color-gold-500: #c9a24b;
+  --color-gold-600: #ab8738;
+  --color-gold-700: #8a6c2c;
+  --color-ink-700: #4a4030;
+  --color-ink-800: #352e22;
+  --color-ink-900: #262015;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink-900);
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-gold-300);
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
